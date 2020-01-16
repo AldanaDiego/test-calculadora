@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class DivTest {
     private final Calculadora calc = new Calculadora();
-    //Comentario
+    //Comentario para cerrar issue
 
     @Test
     void div(){
