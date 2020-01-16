@@ -22,7 +22,11 @@ public class Main {
             result = calc.mult(Float.parseFloat(op[0]), Float.parseFloat(op[2]));
         }
         else if(op[1].equals("/")){
-            result = calc.div(Float.parseFloat(op[0]), Float.parseFloat(op[2]));
+            try{
+                result = calc.div(Float.parseFloat(op[0]), Float.parseFloat(op[2]));
+            } catch (UnsupportedOperationException ex) {
+                System.out.println("No se soporta la division por cero");
+            }
         }
         System.out.println(result);
     }
