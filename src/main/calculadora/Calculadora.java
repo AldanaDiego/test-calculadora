@@ -17,6 +17,9 @@ public class Calculadora {
     }
 
     public float div(float a, float b){
+        if(b == 0){
+            throw new UnsupportedOperationException();
+        }
         return a / b;
     }
 }
