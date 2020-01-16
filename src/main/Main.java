@@ -22,7 +22,7 @@ public class Main {
             result = calc.mult(Float.parseFloat(op[0]), Float.parseFloat(op[2]));
         }
         else if(op[1].equals("/")){
-            result = calc.suma(Float.parseFloat(op[0]), Float.parseFloat(op[2]));
+            result = calc.div(Float.parseFloat(op[0]), Float.parseFloat(op[2]));
         }
         System.out.println(result);
     }
